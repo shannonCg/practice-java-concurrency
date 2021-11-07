@@ -6,8 +6,6 @@ public class SynchronizeMethod{
 
     private String testName;
 
-    private static String TEST = "test";
-
     public SynchronizeMethod(String testName){
         this.testName = testName;
     }

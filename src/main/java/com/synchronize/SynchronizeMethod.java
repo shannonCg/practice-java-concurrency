@@ -16,7 +16,7 @@ public class SynchronizeMethod{
 
     public synchronized void method1() {
         try {
-            Thread.sleep(10*1000);
+            Thread.sleep(10*1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -25,7 +25,7 @@ public class SynchronizeMethod{
     
     public synchronized void method2() {
         try {
-            Thread.sleep(10*1000);
+            Thread.sleep(10*1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -34,7 +34,7 @@ public class SynchronizeMethod{
 
     public static synchronized void method3() {
         try {
-            Thread.sleep(10*1000);
+            Thread.sleep(10*1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

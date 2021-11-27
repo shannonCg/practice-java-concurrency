@@ -1,4 +1,4 @@
-package com.concurrentTool;
+package com.singleThread.concurrentTool;
 
 /*
 *使用concurrent的工具類來在限有資源下執行多工處理

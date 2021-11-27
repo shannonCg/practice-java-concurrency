@@ -1,4 +1,4 @@
-package com.concurrentTool;
+package com.singleThread.concurrentTool;
 
 import java.util.Random;
 import java.util.concurrent.Semaphore;

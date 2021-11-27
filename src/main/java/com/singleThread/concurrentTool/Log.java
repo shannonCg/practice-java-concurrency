@@ -1,4 +1,4 @@
-package com.concurrentTool;
+package com.singleThread.concurrentTool;
 
 public class Log {
     public static void println(String s) {

@@ -11,10 +11,12 @@ public class GuardedRequestQueue implements RequestQueue{
 
     @Override
     public synchronized Request getRequest() {
-        System.out.println("["+new Date()+"]"+"start get request...");
+        System.out.println("["+new Date()+"]"+Thread.currentThread().getName()+" start get request...");
         while(Objects.isNull(queue.peek())){
             try {
+                System.out.println("["+new Date()+"]"+Thread.currentThread().getName()+" before wait, queue="+queue);
                 wait();
+                System.out.println("["+new Date()+"]"+Thread.currentThread().getName()+" after wait, queue="+queue);
             } catch (InterruptedException e) {
             }
         }
